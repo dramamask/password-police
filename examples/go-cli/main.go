@@ -16,7 +16,7 @@ func main() {
 	fmt.Println(policyDescription)
 
 	myPassword := getPwdFromCli()
-	fmt.Printf("Password entered: \"%s\"\n", myPassword)
+	fmt.Printf("Password entered: \"%s\".\n", myPassword)
 	err := password.Validate(myPassword)
 	if err == nil {
 		fmt.Println("Password is valid.")
